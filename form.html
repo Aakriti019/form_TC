@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="layout.css">
+        <link rel="script" href="action.js">
+        <title>Tutor Club</title>
+    </head>
+    <body>
+        <div class="form">
+        <div class="Form-steps" id="div1">
+            <h2> Tutor Club</h2>
+            <form id="form1">
+                <h3>Step 1</h3>
+                <p>Enter your personal information</p><br>
+                <ul id="progressbar">
+                    <li class="active">Personal Information</li><br>
+                    <li>Education</li><br>
+                    <li>Work Experience</li><br>
+                    <li>User Photo</li><br>
+                </ul>
+            </form>
+        </div>
+        <div class="Form-content" id="div2">
+            <form id="form2">
+                <fieldset>
+                <label id>Age</label><br>
+                <input type="radio" name="age" value="2-4">2-4 
+                <input type="radio" name="age" value="4-10">4-10 
+                <input type="radio" name="age" value="10-16">10-16 
+                <input type="radio" name="age" value="above-16">above 16
+                <br><br>
+                <label id>Why do you need tutoring?</label><br>
+                <input type="checkbox" name="reason" value="1">Prepare for test
+                <input type="checkbox" name="reason" value="2">General improvement
+                <input type="checkbox" name="reason" value="3">Help with specific topic
+                <br><br>
+                <label >How often would you like tutoring?</label><br>
+                <input type="radio" name="how-often" value="1">Once a week
+                <input type="radio" name="how-often" value="2">More than once a week
+                <input type="radio" name="how-often" value="3">As recommended by tutor
+                <br><br>
+                <label>How long will you need tutoring?</label><br>
+                <input type="radio" name="how-long" value="1">On an ongoing basis
+                <input type="radio" name="how-long" value="2">As recommended by the tutor
+                <input type="radio" name="how-long" value="3">Date
+                <br><br>
+                <button id="progress-next" class="btn">Next Step</button>
+            </fieldset>
+            <!-- <fieldset>
+                <label>Education:</label><br>
+                <button id="progress-prev" class="btn">Previous</button>
+                <button id="progress-next" class="btn">Next Step</button>
+            </fieldset> -->
+            </form>
+        </div>
+    </div>
+    </body>
+</html>
