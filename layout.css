@@ -1,0 +1,88 @@
+*{margin:0; padding:0px;}
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+label{
+    font-weight: bold;
+}
+#div1{
+    padding:10px;
+    background-color: #304767;
+    color:white;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#div2{
+    padding:30px;
+}
+
+fieldset{
+    border: 0px;
+    padding: 30px;
+}
+.Form-steps{
+    float:left;
+    width:30%;
+}
+
+    #progressbar {
+        position:relative;
+        text-align:left;
+        counter-reset: step;
+        list-style: none;
+    }
+
+/* copy */
+
+#progressbar li {
+    align-items:initial;
+    text-align:left;
+	color: white;
+	float: inline-start;
+	position:static;
+}
+#progressbar li:before {
+    display: inline-block;
+	content: counter(step);
+    position: relative;
+    text-align: center;
+	counter-increment: step;
+	width: 30px;
+	line-height: 30px;
+	display: block;
+	font-size: 20px;
+	color:white;
+    background-color:#304767;
+	border-radius: 25px;
+    border: 1px solid;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+	content: '';
+	width: 1px;
+	height: 100%;
+	position: absolute;
+    display: block;
+	left: 50%;
+    right: 50%;
+	top: 9px;
+    transform: scale(1,2);
+    transform-origin: 50%,-100%;
+    bottom: 2px;
+	z-index:-1;
+}
+
+#progressbar li.active:before,  #progressbar li.active:after{
+	background:white;
+	color: #304767 ;
+}
+
+button{
+    background-color:royalblue;
+    color: white;
+    width: 100px;
+    height: 30px;
+    border:none;
+    border-radius: 5px;
+}
