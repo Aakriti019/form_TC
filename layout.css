@@ -26,17 +26,16 @@ fieldset{
     width:30%;
 }
 
-    #progressbar {
-        position:relative;
-        text-align:left;
-        counter-reset: step;
-        list-style: none;
-    }
+ #progressbar {
+    position:relative;
+    text-align:left;
+    counter-reset: step;
+    list-style: none;
+}
 
 /* copy */
 
 #progressbar li {
-    align-items:initial;
     text-align:left;
 	color: white;
 	float: inline-start;
@@ -59,6 +58,7 @@ fieldset{
 }
 /*progressbar connectors*/
 #progressbar li:after {
+    float: left;
 	content: '';
 	width: 1px;
 	height: 100%;
